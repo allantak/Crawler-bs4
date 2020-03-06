@@ -1,0 +1,8 @@
+n=int(input('Quantos é a população?'))
+z=2.33 #precisão Amostral
+p=0.98#portagem de erro
+c=0.02 #margem de erro
+
+ta = ((((z*z)*(p*(1-p)))/(c*c))/(1 + (((z*z) * (p*(1-p)))/((c*c)*n))))
+
+print(  'O tamanho da amostral: ',ta)
